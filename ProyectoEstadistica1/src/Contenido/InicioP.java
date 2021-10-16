@@ -18,11 +18,14 @@ import javax.swing.JPanel;
  */
 public class InicioP extends javax.swing.JFrame {
 
-    /**
-     * Creates new form InicioP
-     */
+    public void fondosT(){
+    
+    this.scImagen(this.tituloL,"src/imagenes/titulo.png");
+    }
     public InicioP() {
         initComponents();
+        setLocationRelativeTo(null);
+    fondosT();
     }
 
     /**
@@ -35,7 +38,7 @@ public class InicioP extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new fondoPanel();
-        jLabel1 = new javax.swing.JLabel();
+        tituloL = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         teo1 = new javax.swing.JButton();
         teo2 = new javax.swing.JButton();
@@ -45,14 +48,15 @@ public class InicioP extends javax.swing.JFrame {
         teo5 = new javax.swing.JButton();
         teo6 = new javax.swing.JButton();
         teo7 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setText("Proyecto Estadistica 1");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 24, -1, -1));
+        jPanel1.add(tituloL, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 0, 380, 60));
 
         jPanel2.setOpaque(false);
 
@@ -65,6 +69,8 @@ public class InicioP extends javax.swing.JFrame {
             }
         });
 
+        teo2.setBackground(new java.awt.Color(153, 102, 0));
+        teo2.setFont(new java.awt.Font("Yu Gothic", 1, 14)); // NOI18N
         teo2.setText("Teorema 2");
         teo2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,6 +78,8 @@ public class InicioP extends javax.swing.JFrame {
             }
         });
 
+        teo3.setBackground(new java.awt.Color(153, 102, 0));
+        teo3.setFont(new java.awt.Font("Yu Gothic", 1, 14)); // NOI18N
         teo3.setText("Teorema 3");
         teo3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,6 +87,8 @@ public class InicioP extends javax.swing.JFrame {
             }
         });
 
+        teo4.setBackground(new java.awt.Color(153, 102, 0));
+        teo4.setFont(new java.awt.Font("Yu Gothic", 1, 14)); // NOI18N
         teo4.setText("Teorema 4");
         teo4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,10 +121,12 @@ public class InicioP extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, -1, 130));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, -1, 160));
 
         jPanel3.setOpaque(false);
 
+        teo5.setBackground(new java.awt.Color(153, 102, 0));
+        teo5.setFont(new java.awt.Font("Yu Gothic", 1, 14)); // NOI18N
         teo5.setText("Teorema 5");
         teo5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,6 +134,8 @@ public class InicioP extends javax.swing.JFrame {
             }
         });
 
+        teo6.setBackground(new java.awt.Color(153, 102, 0));
+        teo6.setFont(new java.awt.Font("Yu Gothic", 1, 14)); // NOI18N
         teo6.setText("Teorema 6");
         teo6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,6 +143,8 @@ public class InicioP extends javax.swing.JFrame {
             }
         });
 
+        teo7.setBackground(new java.awt.Color(153, 102, 0));
+        teo7.setFont(new java.awt.Font("Yu Gothic", 1, 14)); // NOI18N
         teo7.setText("Teorema 7");
         teo7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +161,7 @@ public class InicioP extends javax.swing.JFrame {
                     .addComponent(teo5)
                     .addComponent(teo6)
                     .addComponent(teo7))
-                .addGap(0, 25, Short.MAX_VALUE))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,10 +171,27 @@ public class InicioP extends javax.swing.JFrame {
                 .addComponent(teo6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(teo7)
-                .addGap(0, 31, Short.MAX_VALUE))
+                .addGap(0, 13, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 380, 120, 120));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 370, 120, 120));
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Henry Quenun");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 110, 40));
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Luis Yax");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 60, 60));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Adonis Rodriguez");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 140, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -266,6 +299,8 @@ Teorema5 frame5 = new Teorema5();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -276,5 +311,6 @@ Teorema5 frame5 = new Teorema5();
     private javax.swing.JButton teo5;
     private javax.swing.JButton teo6;
     private javax.swing.JButton teo7;
+    private javax.swing.JLabel tituloL;
     // End of variables declaration//GEN-END:variables
 }
