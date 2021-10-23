@@ -243,7 +243,9 @@ Teorema5 frame5 = new Teorema5();
        dispose();    }//GEN-LAST:event_teo5ActionPerformed
 
     private void teo6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teo6ActionPerformed
-        // TODO add your handling code here:
+       Teorema6 frame6 = new Teorema6();
+       frame6.setVisible(true);
+       dispose();      
     }//GEN-LAST:event_teo6ActionPerformed
 
     private void teo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teo7ActionPerformed

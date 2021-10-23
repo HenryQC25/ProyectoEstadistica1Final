@@ -37,14 +37,20 @@ public class Teorema1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         titulo1 = new javax.swing.JLabel();
         atrasB = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        Cnum = new javax.swing.JTextField();
+        lasResp = new javax.swing.JLabel();
+        comBoton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Texto explicando teorema ");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 190, -1, 510));
+        jLabel1.setFont(new java.awt.Font("Yu Gothic", 1, 24)); // NOI18N
+        jLabel1.setText("¿Cuántos números de  5  cifras diferentes se pueden formar con los dígitos: 1,2,3,4,5 ?");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 1050, 40));
 
         titulo1.setText("j");
         jPanel1.add(titulo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, 260, 70));
@@ -58,16 +64,24 @@ public class Teorema1 extends javax.swing.JFrame {
         });
         jPanel1.add(atrasB, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1242, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 815, Short.MAX_VALUE)
-        );
+        jLabel2.setFont(new java.awt.Font("Yu Gothic", 1, 48)); // NOI18N
+        jLabel2.setText("! =");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 300, 110, -1));
+        jPanel1.add(Cnum, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 320, 100, 40));
+
+        lasResp.setFont(new java.awt.Font("Yu Gothic", 1, 48)); // NOI18N
+        lasResp.setText(".");
+        jPanel1.add(lasResp, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 300, 430, 80));
+
+        comBoton.setText("Comprobar respuesta");
+        comBoton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comBotonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(comBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 410, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1230, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -77,6 +91,26 @@ public class Teorema1 extends javax.swing.JFrame {
      frame.setVisible(true);
      dispose();
     }//GEN-LAST:event_atrasBActionPerformed
+////////
+     public float Com(){
+    float resp = 0;
+    float factorial=1;
+    float txt1= Float.parseFloat(Cnum.getText());
+    if(txt1==0){
+        lasResp.setText("1");
+    }else{
+        resp=txt1;
+   while ( resp!=0) {
+  factorial=factorial*resp;
+  resp--;
+}
+    }
+    return factorial;
+     }
+    private void comBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comBotonActionPerformed
+         String r= String.valueOf(Com());
+        lasResp.setText(r);
+    }//GEN-LAST:event_comBotonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -114,9 +148,13 @@ public class Teorema1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField Cnum;
     private javax.swing.JButton atrasB;
+    private javax.swing.JButton comBoton;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lasResp;
     private javax.swing.JLabel titulo1;
     // End of variables declaration//GEN-END:variables
 }

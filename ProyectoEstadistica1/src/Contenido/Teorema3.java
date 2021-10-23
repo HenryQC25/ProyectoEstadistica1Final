@@ -63,7 +63,7 @@ public class Teorema3 extends javax.swing.JFrame {
         imgM.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         imgM.setText(".");
         imgM.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel1.add(imgM, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 430, 420));
+        jPanel1.add(imgM, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 430, 420));
 
         atrasB.setBackground(new java.awt.Color(255, 255, 102));
         atrasB.setText("Atrás");
@@ -122,7 +122,7 @@ public class Teorema3 extends javax.swing.JFrame {
         jLabel9.setText("(");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, 30, 40));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 610));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1160, 650));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
