@@ -5,6 +5,7 @@ import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 
 public class Teorema1 extends javax.swing.JFrame {
@@ -19,7 +20,7 @@ public class Teorema1 extends javax.swing.JFrame {
 //////////////////////////   
     public void img(){
     this.scImagen(this.titulo1,"src/imagenes/T1.png");
-    
+    this.scImagen(formulalb,"src/imagenes/formulaT1.png" );
     }
 ////////////////////////    
     public Teorema1() {
@@ -41,6 +42,8 @@ public class Teorema1 extends javax.swing.JFrame {
         Cnum = new javax.swing.JTextField();
         lasResp = new javax.swing.JLabel();
         comBoton = new javax.swing.JButton();
+        comBoton1 = new javax.swing.JButton();
+        formulalb = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,7 +53,7 @@ public class Teorema1 extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic", 1, 24)); // NOI18N
         jLabel1.setText("¿Cuántos números de  5  cifras diferentes se pueden formar con los dígitos: 1,2,3,4,5 ?");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 1050, 40));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 1050, 40));
 
         titulo1.setText("j");
         jPanel1.add(titulo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, 260, 70));
@@ -79,7 +82,16 @@ public class Teorema1 extends javax.swing.JFrame {
                 comBotonActionPerformed(evt);
             }
         });
-        jPanel1.add(comBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 410, -1, -1));
+        jPanel1.add(comBoton, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, -1, -1));
+
+        comBoton1.setText("Calcular con cualquier numero");
+        comBoton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comBoton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(comBoton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 410, -1, -1));
+        jPanel1.add(formulalb, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 20, 200, 130));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1230, 540));
 
@@ -108,9 +120,23 @@ public class Teorema1 extends javax.swing.JFrame {
     return factorial;
      }
     private void comBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comBotonActionPerformed
-         String r= String.valueOf(Com());
+        if("5".equals(Cnum.getText())){
+        String r= String.valueOf(Com());
         lasResp.setText(r);
+        JOptionPane.showMessageDialog(null, "Dato correcto, eres muy buen@");
+        
+        }else{
+        JOptionPane.showMessageDialog(null, "Debes analizar nuevamente el problema, ingresa el dato correcto");
+        Cnum.setText("");  lasResp.setText("");
+        }
     }//GEN-LAST:event_comBotonActionPerformed
+
+    private void comBoton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comBoton1ActionPerformed
+       try{ String r= String.valueOf(Com());
+        lasResp.setText(r);}catch(Exception e){
+        JOptionPane.showMessageDialog(null, "Debes llenar el campo requerido");
+        }
+    }//GEN-LAST:event_comBoton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -151,6 +177,8 @@ public class Teorema1 extends javax.swing.JFrame {
     private javax.swing.JTextField Cnum;
     private javax.swing.JButton atrasB;
     private javax.swing.JButton comBoton;
+    private javax.swing.JButton comBoton1;
+    private javax.swing.JLabel formulalb;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

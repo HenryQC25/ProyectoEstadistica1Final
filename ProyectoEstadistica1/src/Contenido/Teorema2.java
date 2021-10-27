@@ -5,6 +5,7 @@ import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 
 public class Teorema2 extends javax.swing.JFrame {
@@ -20,7 +21,7 @@ public class Teorema2 extends javax.swing.JFrame {
 //////////////////////////   
     public void img(){
     this.scImagen(this.titulo2,"src/imagenes/T2.png");
-    
+    this.scImagen(this.formulalb,"src/imagenes/formulaT2.png");
     }
     
     public Teorema2() {
@@ -52,6 +53,7 @@ public class Teorema2 extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        formulalb = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -132,6 +134,7 @@ public class Teorema2 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 600, -1, -1));
+        jPanel1.add(formulalb, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 10, 320, 140));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -165,17 +168,24 @@ public class Teorema2 extends javax.swing.JFrame {
      }
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        float ntxt= Float.parseFloat(nTxt.getText());
+      
+        
+        try{
+              float ntxt= Float.parseFloat(nTxt.getText());
         float ntxt2= Float.parseFloat(nTxt2.getText());
         float rtxt=Float.parseFloat(rTxt.getText());
-        float resta=ntxt2-rtxt; 
+             float resta=ntxt2-rtxt;
+       if("5".equals(nTxt.getText()) && "5".equals(nTxt2.getText()) && "2".equals(rTxt.getText())){
         float resultado = Com(ntxt)/Com(resta);
-        respT.setText(String.valueOf(resultado));
+        respT.setText(String.valueOf(resultado));}else{
+       JOptionPane.showMessageDialog(null, "Debes analizar nuevamente el problema, ingresa el dato correcto");
+        nTxt.setText(""); nTxt2.setText(""); rTxt.setText("");  respT.setText("");
+       }}catch(Exception e){
+       JOptionPane.showMessageDialog(null, "Debes llenar todos los campos");
+       }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -210,6 +220,7 @@ public class Teorema2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton atrasB1;
+    private javax.swing.JLabel formulalb;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

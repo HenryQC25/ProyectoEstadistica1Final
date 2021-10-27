@@ -5,6 +5,7 @@ import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 
 public class Teorema3 extends javax.swing.JFrame {
@@ -38,7 +39,6 @@ public class Teorema3 extends javax.swing.JFrame {
         t3 = new javax.swing.JLabel();
         imgM = new javax.swing.JLabel();
         atrasB = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         respuestaL = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         tx2 = new javax.swing.JTextField();
@@ -74,18 +74,12 @@ public class Teorema3 extends javax.swing.JFrame {
         });
         jPanel1.add(atrasB, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel3.setText("Permutacion Circular: Las permutaciones circulares son un caso particular de las permutaciones.     Se utilizan cuando los elementos se han de ordenar \"en círculo\",\n(por ejemplo, los comensales en una mesa), de modo que el primer elemento que \"se sitúe\" en la muestra determina el principio y el final de muestra.");
-        jLabel3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 1000, 40));
-
         respuestaL.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         respuestaL.setText("Respuesta");
         jPanel1.add(respuestaL, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 290, 110, 40));
 
-        jLabel2.setText("¿De cuántas maneras se pueden sentar 5 amigos alrededor de una mesa circular?");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 480, 90));
+        jLabel2.setText("¿De cuántas maneras se pueden sentar 5 amigos alrededor de una piscina circular durante una fiesta?");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 600, 90));
         jPanel1.add(tx2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 290, 60, 30));
 
         jLabel4.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
@@ -148,9 +142,17 @@ public class Teorema3 extends javax.swing.JFrame {
     }
     //////////////////////
     private void compActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compActionPerformed
-        String r= String.valueOf(Com());
-        respuestaL.setText(r);
-        
+      
+        try{ 
+           if("5".equals(tx1.getText())&&"1".equals(tx2.getText())){
+           String r= String.valueOf(Com());
+        respuestaL.setText(r);}else{
+         JOptionPane.showMessageDialog(null, "Debes analizar nuevamente el problema, ingresa el dato correcto");
+        tx1.setText("");  tx2.setText("");
+           }
+       }catch(Exception e){
+           JOptionPane.showMessageDialog(null, "Debes llenar todos los campos");
+       }
     }//GEN-LAST:event_compActionPerformed
 
     /**
@@ -193,7 +195,6 @@ public class Teorema3 extends javax.swing.JFrame {
     private javax.swing.JButton comp;
     private javax.swing.JLabel imgM;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
