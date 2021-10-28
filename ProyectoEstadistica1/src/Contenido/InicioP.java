@@ -36,9 +36,11 @@ public class InicioP extends javax.swing.JFrame {
         teo5 = new javax.swing.JButton();
         teo6 = new javax.swing.JButton();
         teo7 = new javax.swing.JButton();
+        teo8 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -140,6 +142,15 @@ public class InicioP extends javax.swing.JFrame {
             }
         });
 
+        teo8.setBackground(new java.awt.Color(153, 102, 0));
+        teo8.setFont(new java.awt.Font("Yu Gothic", 1, 14)); // NOI18N
+        teo8.setText("Teorema 8");
+        teo8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                teo8ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -148,7 +159,8 @@ public class InicioP extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(teo5)
                     .addComponent(teo6)
-                    .addComponent(teo7))
+                    .addComponent(teo7)
+                    .addComponent(teo8))
                 .addGap(0, 17, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -159,10 +171,12 @@ public class InicioP extends javax.swing.JFrame {
                 .addComponent(teo6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(teo7)
-                .addGap(0, 13, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(teo8)
+                .addContainerGap())
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 370, 120, 120));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 370, 120, 160));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -180,6 +194,16 @@ public class InicioP extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Adonis Rodriguez");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 140, 40));
+
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Presioname Master");
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, -1, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -249,8 +273,20 @@ Teorema5 frame5 = new Teorema5();
     }//GEN-LAST:event_teo6ActionPerformed
 
     private void teo7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teo7ActionPerformed
-        // TODO add your handling code here:
+        Teorema7 frame7 = new Teorema7();
+       frame7.setVisible(true);
+       dispose();
     }//GEN-LAST:event_teo7ActionPerformed
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+       FormulasXD framexd = new FormulasXD();
+       framexd.setVisible(true);
+       dispose(); 
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void teo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teo8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_teo8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -291,6 +327,7 @@ Teorema5 frame5 = new Teorema5();
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -301,6 +338,7 @@ Teorema5 frame5 = new Teorema5();
     private javax.swing.JButton teo5;
     private javax.swing.JButton teo6;
     private javax.swing.JButton teo7;
+    private javax.swing.JButton teo8;
     private javax.swing.JLabel tituloL;
     // End of variables declaration//GEN-END:variables
 }

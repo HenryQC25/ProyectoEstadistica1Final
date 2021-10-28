@@ -19,7 +19,7 @@ ImageIcon imagen;String ruta; Icon icono;
 //////////////////////////   
     public void img(){
     this.scImagen(this.titulo6,"src/imagenes/T6.png");
-    this.scImagen(this.formulalb,"src/imagenes/formulaT6.png");
+   this.scImagen(this.formulalb,"src/imagenes/formulaT6.png");
     }
     
     

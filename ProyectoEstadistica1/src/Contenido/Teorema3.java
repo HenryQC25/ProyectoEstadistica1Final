@@ -20,7 +20,7 @@ public class Teorema3 extends javax.swing.JFrame {
 //////////////////////////   
     public void img(){
     this.scImagen(this.t3,"src/imagenes/T3.png");
-    this.scImagen(this.imgM,"src/imagenes/PCircular.jpg");
+    this.scImagen(this.imgM,"src/imagenes/formulaT3.png");
     }
 //////////////////////// 
    
@@ -63,7 +63,7 @@ public class Teorema3 extends javax.swing.JFrame {
         imgM.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         imgM.setText(".");
         imgM.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jPanel1.add(imgM, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 430, 420));
+        jPanel1.add(imgM, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 20, 260, 110));
 
         atrasB.setBackground(new java.awt.Color(255, 255, 102));
         atrasB.setText("Atrás");
@@ -76,19 +76,19 @@ public class Teorema3 extends javax.swing.JFrame {
 
         respuestaL.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         respuestaL.setText("Respuesta");
-        jPanel1.add(respuestaL, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 290, 110, 40));
+        jPanel1.add(respuestaL, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 290, 110, 40));
 
         jLabel2.setText("¿De cuántas maneras se pueden sentar 5 amigos alrededor de una piscina circular durante una fiesta?");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 600, 90));
-        jPanel1.add(tx2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 290, 60, 30));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 600, 90));
+        jPanel1.add(tx2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 290, 60, 30));
 
         jLabel4.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         jLabel4.setText("PCn=");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 280, 50, 60));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 50, 60));
 
         jLabel5.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         jLabel5.setText("=");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 290, 30, 40));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 290, 30, 40));
 
         comp.setBackground(new java.awt.Color(255, 255, 102));
         comp.setText("Comprobar Respuesta");
@@ -97,24 +97,24 @@ public class Teorema3 extends javax.swing.JFrame {
                 compActionPerformed(evt);
             }
         });
-        jPanel1.add(comp, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 370, -1, -1));
+        jPanel1.add(comp, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 370, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Yu Gothic", 1, 24)); // NOI18N
         jLabel6.setText(")");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 290, 30, 40));
-        jPanel1.add(tx1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 290, 60, 30));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, 30, 40));
+        jPanel1.add(tx1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, 60, 30));
 
         jLabel7.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         jLabel7.setText("!");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 290, 30, 40));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 290, 30, 40));
 
         jLabel8.setFont(new java.awt.Font("Yu Gothic", 1, 24)); // NOI18N
         jLabel8.setText("-");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 290, 30, 40));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, 30, 40));
 
         jLabel9.setFont(new java.awt.Font("Yu Gothic", 1, 24)); // NOI18N
         jLabel9.setText("(");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 290, 30, 40));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 290, 30, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1160, 650));
 

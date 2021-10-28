@@ -50,6 +50,7 @@ public class Teorema4 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -116,6 +117,10 @@ public class Teorema4 extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N
         jLabel7.setText("=");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 430, 40, 50));
+
+        jLabel8.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N
+        jLabel8.setText("!");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, 30, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -213,6 +218,7 @@ public class Teorema4 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel resplb;
     private javax.swing.JLabel titulo4;
