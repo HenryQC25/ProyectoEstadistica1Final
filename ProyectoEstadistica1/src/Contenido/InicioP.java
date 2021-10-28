@@ -285,7 +285,9 @@ Teorema5 frame5 = new Teorema5();
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void teo8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teo8ActionPerformed
-        // TODO add your handling code here:
+     Teorema8 frame8 = new Teorema8();
+       frame8.setVisible(true);
+       dispose();
     }//GEN-LAST:event_teo8ActionPerformed
 
     /**
