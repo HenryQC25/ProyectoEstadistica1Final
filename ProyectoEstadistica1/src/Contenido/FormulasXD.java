@@ -43,6 +43,8 @@ public class FormulasXD extends javax.swing.JFrame {
        this.scImagen(this.t4,"src/imagenes/formulaT4.png");
         this.scImagen(this.t5,"src/imagenes/formulaT5.png");
          this.scImagen(this.t6,"src/imagenes/formulaT6.png");
+         this.scImagen(this.t7,"src/imagenes/formulaT7.png");
+         this.scImagen(this.t8,"src/imagenes/formulaT8.png");
     }
     //////////////////////////////
     @SuppressWarnings("unchecked")
@@ -103,12 +105,12 @@ public class FormulasXD extends javax.swing.JFrame {
         t7.setBackground(new java.awt.Color(255, 0, 51));
         t7.setText("      ");
         t7.setOpaque(true);
-        jPanel1.add(t7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 50, 150, 90));
+        jPanel1.add(t7, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 50, 190, 90));
 
         t8.setBackground(new java.awt.Color(255, 0, 51));
         t8.setText("      ");
         t8.setOpaque(true);
-        jPanel1.add(t8, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 50, 140, 90));
+        jPanel1.add(t8, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 50, 550, 90));
 
         t2.setBackground(new java.awt.Color(255, 0, 51));
         t2.setText("      ");
