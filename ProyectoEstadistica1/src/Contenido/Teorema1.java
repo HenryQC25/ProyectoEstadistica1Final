@@ -108,6 +108,7 @@ public class Teorema1 extends javax.swing.JFrame {
     float resp = 0;
     float factorial=1;
     float txt1= Float.parseFloat(Cnum.getText());
+    
     if(txt1==0){
         lasResp.setText("1");
     }else{
@@ -117,6 +118,7 @@ public class Teorema1 extends javax.swing.JFrame {
   resp--;
 }
     }
+    
     return factorial;
      }
     private void comBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comBotonActionPerformed
@@ -132,7 +134,13 @@ public class Teorema1 extends javax.swing.JFrame {
     }//GEN-LAST:event_comBotonActionPerformed
 
     private void comBoton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comBoton1ActionPerformed
-       try{ String r= String.valueOf(Com());
+       try{float Txt1= Float.parseFloat(Cnum.getText()); 
+           if(Txt1<0){
+    JOptionPane.showMessageDialog(null, "Dato incorrecto, no debe ser menor a 0");
+    lasResp.setText(".");Cnum.setText("");
+    }
+           
+           String r= String.valueOf(Com());
         lasResp.setText(r);}catch(Exception e){
         JOptionPane.showMessageDialog(null, "Debes llenar el campo requerido");
         }
